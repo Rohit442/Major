@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run diabetes_pred.py
+web: sh setup.sh && streamlit run Diab_pred.py
