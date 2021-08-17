@@ -2,7 +2,7 @@ import numpy as np
 import pickle
 import pandas as pd
 import streamlit as st
-
+import matplotlib.pyplot as plt
 df=pd.read_csv('desc.csv')
 df1 = pd.read_csv('diabetes.csv')
 
