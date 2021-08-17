@@ -44,9 +44,8 @@ def main():
             st.error("Sorry, it looks like you have diabetes.")
     
     st.markdown('########')
-    fig = plt.figure()
     plt.scatter(df1['BMI'],df1['Outcome'])
-    st.plotly_chart(fig)
+    st.pyplot()
     if st.button("About our data"):
         st.write(df.set_index('Unnamed: 0'))
 
