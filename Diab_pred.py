@@ -47,10 +47,8 @@ def main():
             st.success("Good news! It looks like you don't have diabetes.")
         else :
             st.error("Sorry, it looks like you have diabetes.")
-    if st.button("About"):
-        st.text("Diabetes Predictor")
-        st.text("Done by Rohit")
-
+    if st.button("About our data"):
+        st.write(df)
 
 #if __name__ == '__main__':
 main()
