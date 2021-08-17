@@ -44,7 +44,7 @@ def main():
             st.error("Sorry, it looks like you have diabetes.")
     
     st.write('########')
-    plt.bar(df1['BMI'],df1['Outcome'])
+    plt.bar(df1['Outcome'],df1['BMI'])
     st.pyplot()
     if st.button("About our data"):
         st.write(df.set_index('Unnamed: 0'))
