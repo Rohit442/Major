@@ -43,10 +43,13 @@ def main():
     result = ""
     if st.button("Predict"):
         result = Diabetes_prediction(int(Preg),int(Gluc),int(BP),int(SkinThickness),int(Insulin),float(BMI), float(DiabetesPedigreeFunction),int(Age))
-    st.success('The output is {}'.format(result))
+        if result[0]==0 :
+            st.success("Good news! It looks like you don't have diabetes.")
+        else :
+            st.error("Sorry, it looks like you have diabetes.")
     if st.button("About"):
-        st.text("Lets LEarn")
-        st.text("Built with Streamlit")
+        st.text("Diabetes Predictor")
+        st.text("Done by Rohit")
 
 
 #if __name__ == '__main__':
