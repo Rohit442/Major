@@ -40,7 +40,7 @@ def main():
         else :
             st.error("Sorry, it looks like you have diabetes.")
     if st.button("About our data"):
-        st.write(df)
+        st.write(df.set_index('Unnamed: 0'))
 
 #if __name__ == '__main__':
 main()
