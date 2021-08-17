@@ -19,20 +19,20 @@ def main():
     st.write("""
     # Diabetes Prediction App
     """)
-    st.sidebar.header('User Input Features')
+    st.header('User Input Features')
     html_temp = """
     <div style="background-color:#546beb;padding:10px">
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)    
-    Preg =st.sidebar.slider("Pregnancies",0,20,6)
-    Gluc = st.sidebar.slider("Glucose",0,200,140)
-    BP = st.sidebar.slider("BloodPressure",0,120,80)
-    SkinThickness = st.sidebar.slider("SkinThickness",0,99,32)
-    Insulin = st.sidebar.slider("Insulin",0,846,127)
-    BMI = st.sidebar.slider("BMI",0.0,70.0,35.0)
-    DiabetesPedigreeFunction = st.sidebar.slider("DiabetesPedigreeFunction",0.078,2.42,0.62)
-    Age = st.sidebar.slider("Age",21,81,41)
+    Preg =st.slider("Pregnancies",0,20,6)
+    Gluc = st.slider("Glucose",0,200,140)
+    BP = st.slider("BloodPressure",0,120,80)
+    SkinThickness = st.slider("SkinThickness",0,99,32)
+    Insulin = st.slider("Insulin",0,846,127)
+    BMI = st.slider("BMI",0.0,70.0,35.0)
+    DiabetesPedigreeFunction = st.slider("DiabetesPedigreeFunction",0.078,2.42,0.62)
+    Age = st.slider("Age",21,81,41)
 
     
     result = ""
