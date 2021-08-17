@@ -43,7 +43,7 @@ def main():
         else :
             st.error("Sorry, it looks like you have diabetes.")
     
-    st.markdown('##')    
+    st.markdown('########')    
     if st.button("About our data"):
         st.write(df.set_index('Unnamed: 0'))
 
