@@ -43,8 +43,8 @@ def main():
         else :
             st.error("Sorry, it looks like you have diabetes.")
     
-    st.markdown('########')
-    plt.scatter(df1['BMI'],df1['Outcome'])
+    st.write('########')
+    plt.bar(df1['BMI'],df1['Outcome'])
     st.pyplot()
     if st.button("About our data"):
         st.write(df.set_index('Unnamed: 0'))
