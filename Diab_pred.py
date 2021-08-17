@@ -44,7 +44,7 @@ def main():
         else :
             st.error("Sorry, it looks like you have diabetes.")
     
-    st.write('########')
+    
     sns.boxplot(x='Outcome',y='BMI',data=df1)
     st.pyplot()
     if st.button("About our data"):
