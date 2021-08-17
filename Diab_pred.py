@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 df=pd.read_csv('desc.csv')
-
+df1 = pd.read_csv('diabetes.csv')
 
 pickle_in = open("Maj_proj_model_pickle", "rb")
 classifier = pickle.load(pickle_in)
@@ -43,7 +43,10 @@ def main():
         else :
             st.error("Sorry, it looks like you have diabetes.")
     
-    st.markdown('########')    
+    st.markdown('########')
+    fig = plt.figure()
+    plt.scatter(df1['BMI'],df1['Outcome'])
+    st.plotly_chart(fig)
     if st.button("About our data"):
         st.write(df.set_index('Unnamed: 0'))
 
