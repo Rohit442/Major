@@ -16,7 +16,10 @@ def Diabetes_prediction(Preg,Gluc,BP,SkinThickness,Insulin,BMI,DiabetesPedigreeF
 
 
 def main():
-    st.title("Diabetes Predictor")
+    st.write("""
+    # Diabetes Prediction App
+    """)
+    st.sidebar.header('User Input Features')
     html_temp = """
     <div style="background-color:#546beb;padding:10px">
     </div>
