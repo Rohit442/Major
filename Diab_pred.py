@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+import seaborn as sns
 df=pd.read_csv('desc.csv')
 df1 = pd.read_csv('diabetes.csv')
 
@@ -44,7 +45,7 @@ def main():
             st.error("Sorry, it looks like you have diabetes.")
     
     st.write('########')
-    plt.boxplot(df1['Outcome'],df1['BMI'])
+    sns.boxplot(x='Outcome',y='BMI',data=df1)
     st.pyplot()
     if st.button("About our data"):
         st.write(df.set_index('Unnamed: 0'))
